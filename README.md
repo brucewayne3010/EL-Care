@@ -16,10 +16,10 @@ Hey Guys, my name is Samrat and this is the website(prototype) i.e. El-Care that
    
    ![SSS0](https://user-images.githubusercontent.com/72298242/139598889-7f08000b-60d7-4d75-8855-04de2672445d.jpg)
    
-   Step-2 : If not able to complete the Step-1 then, click on this link https://samrat-elcare.netlify.app/ to directly go to the website.                                                                           
+   Step-2 : If not able to complete the Step-1 then, click on this link https://samrat-elcare.netlify.app/ to directly go to the website.
+   
    ![SS1](https://user-images.githubusercontent.com/72298242/139596177-0204cb97-bb9a-43ab-a29f-c7bad2dcd64f.png)
-                     
-                     
+   
 4) After getting inside the website from the above link, here is a detailed step by step process for how to use the El-Care :- 
    
    STEP-1 : After clicking the link https://samrat-elcare.netlify.app/ this page will show up (Main Page).
