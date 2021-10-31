@@ -1,0 +1,96 @@
+*{
+box-sizing: border-box;
+}
+body{
+margin: 0;
+}
+.flex-c{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.yogaImg{
+    max-height: 280px;
+    max-width: 100%;
+}
+.max-w{
+    max-width: 920px;
+}
+.LogoAbout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.LogoAbout img,.logoHome{
+    width: 420px;
+    height: 220px;
+    object-fit: cover;
+
+}
+.text-xs{
+    font-size: 0.8rem;
+    margin: 0 !important;
+}
+.vh-c{
+    min-height: calc(100vh - 75px);
+}
+.grid-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 720px;
+}
+.grid-main > div{
+    width: 100%;
+}
+ol{
+    list-style: circle;
+}
+h6,h4{
+    max-width: max-content;
+    padding-right: 22px;
+}
+.points::before{
+    content: " ";
+    height: 6px;
+    width: 6px;
+    background-color: #000;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+}
+.points{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.inp{
+    display: grid;
+    max-width: 100%;
+    width: 100%;
+    grid-template-columns: 120px 1fr;
+    margin-bottom: 1rem;
+
+}
+.inp label{
+    color: rgb(80, 80, 80);
+}
+.inp input{
+    padding: 6px 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 2px rgba(180, 180, 180, 0.5) solid;
+}
+#chkGroup{
+    display: flex;
+    flex-wrap: wrap;
+}
+.chk{
+    padding:8px;
+    padding-left: 0;
+    min-width: max-content;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../assets/style.css" />
+    <title>ElCare - Result</title>
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <header
+        class="d-flex flex-wrap justify-content-center py-3 border-bottom"
+      >
+        <a
+          href="/"
+          class="
+            d-flex
+            align-items-center
+            mb-3 mb-md-0
+            me-md-auto
+            text-dark text-decoration-none
+          "
+        >
+          <span class="fs-4 fw-bold">El-Care</span>
+        </a>
+
+        <ul class="nav nav-pills">
+          
+          <li class="nav-item"><a href="/p/about.html" class="nav-link">About</a></li>
+        </ul>
+      </header>
+    </div>
+  </nav>
+      <main class="container">
+              <button onclick="history.back()" class="btn btn-sm btn-dark m-2" > < Back </button>
+              <section class="container d-flex flex-column align-items-center">
+              <div id="DisplayResults" class="max-w my-4 py-4">
+
+            </div>
+            
+          </section>
+      </main>
+      <script>
+        let YogaData = window.localStorage.getItem("YogaData")
+        let Issues = window.localStorage.getItem("UserData")
+        let DisplayDiv = document.getElementById("DisplayResults")
+
+        let DisplayData = []
+        for (el of JSON.parse(Issues)[0]){
+          console.log(el)
+          if (el.isChecked){
+            for (e of JSON.parse(YogaData)){
+              if (e.disease == el.Name){
+                DisplayData.push(e)
+              }
+            }
+          }
+        }
+
+        for (ele of DisplayData){
+          let div = document.createElement("div")
+          let div2 = document.createElement("div")
+          let title = document.createElement("h4")
+          let description = document.createElement("p")
+          // let div = document.createElement("div")
+
+          title.innerText = ele.disease
+          title.classList.add("border-bottom","fw-bold")
+          description.innerText = ele.description
+          div.classList.add("mb-5")
+          div2.style.maxWidth="840px"
+          div2.style.marginLeft="20px"
+
+          for(e of ele.Yogas){
+          let divInner = document.createElement("div")
+          let divInner2 = document.createElement("div")
+          let img = document.createElement("img")
+
+            let name = document.createElement("h6")
+            name.classList.add("points","border-bottom","w-100")
+            let steps = document.createElement("p")
+
+            name.innerText=e.name
+            steps.innerText = (e.description).split()
+
+            img.src=e.image
+            img.classList.add("yogaImg","my-4")
+
+            divInner.appendChild(name)
+            divInner2.appendChild(img)
+            divInner2.appendChild(steps)
+
+            divInner.classList.add("mb-4")
+            divInner2.classList.add("flex-c")
+
+            divInner.appendChild(divInner2)
+            div2.appendChild(divInner)
+          }
+
+          div.appendChild(title)
+          div.appendChild(description)
+          div.appendChild(div2)
+
+          DisplayDiv.appendChild(div)
+        }
+
+      </script>
+</body>
+</html>
