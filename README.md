@@ -1,4 +1,4 @@
-# elcare
+# El-Care
 
 Hey Guys, my name is Samrat and this is the website(prototype) i.e. El-Care that i created. So, do read to the bottom for the full exposure of the website.
 
