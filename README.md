@@ -57,7 +57,7 @@ Hey Guys, my name is Samrat and this is the website(prototype) i.e. El-Care that
    
    STEP-7 : After verifing and submitting. This page will show up with the appropriate solution of diseases that you have selected previously in the form. In our case, it's Alzheimer and osteoporosis. Therefore, this page will only show the solution of diseases which you have selected. It can be a single or multiple diseases solution, here it's multiple.
    
-   For Arthritis :- 
+   For Alzheimer :- 
 
    ![SS8](https://user-images.githubusercontent.com/72298242/139597708-94669280-4dfa-4eb2-a8e0-60a0c0ff97aa.png)
 
