@@ -8,13 +8,13 @@ Hey Guys, my name is Samrat and this is the website(prototype) i.e. El-Care that
 2) AIM of El-Care :- To provide best solutions for the medical diseases with the help of yoga asanas for the elderly citizens (60+ age) and it can be well utilized by any                              age group people also.
 
 3) To visit the website, there are mainly two steps as shown bellow :-
-   Step-1 : Please click on the "NETLIFY BUILDING" button at the bottom of this README. Then click this link as shown bellow.
+   Step-1 : Please click on the "NETLIFY SUCCESS" button at the bottom of this README. Then click this link as shown bellow and you can see the main page as shown in Step-2.
    
-   ![SS0](https://user-images.githubusercontent.com/72298242/139598586-113302ba-ac48-4843-887d-dfc890da25d4.png)
+   ![SS0_LI](https://user-images.githubusercontent.com/72298242/139598880-7ed6ca76-3ebc-4f2b-9a78-2575965d27b8.jpg)
    
    Then click this link as shown bellow ->
    
-   
+   ![SSS0](https://user-images.githubusercontent.com/72298242/139598889-7f08000b-60d7-4d75-8855-04de2672445d.jpg)
    
    Step-2 : If not able to complete the Step-1 then, click on this link https://samrat-elcare.netlify.app/ to directly go to the website.                                                                           
    ![SS1](https://user-images.githubusercontent.com/72298242/139596177-0204cb97-bb9a-43ab-a29f-c7bad2dcd64f.png)
